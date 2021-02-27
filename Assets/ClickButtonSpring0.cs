@@ -12,7 +12,6 @@ public class ClickButtonSpring0 : MonoBehaviour
     void OnMouseDown()
     {
         Debug.Log("Clicked button0");
-        GlobalVariables.c = 1;
     }
     void Update()
     {
