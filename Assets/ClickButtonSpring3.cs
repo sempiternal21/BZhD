@@ -13,6 +13,7 @@ public class ClickButtonSpring3 : MonoBehaviour
     void OnMouseDown()
     {
         Debug.Log("Clicked button3");
+        GlobalVariables.c = 4;
     }
 
     // Update is called once per frame
