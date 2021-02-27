@@ -2,18 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClickButtonSpring1 : MonoBehaviour
+public class Strelka : MonoBehaviour
 {
+    public GameObject strel;
     // Start is called before the first frame update
     void Start()
     {
         
-    }
-
-    void OnMouseDown()
-    {
-        Debug.Log("Clicked button1");
-        GlobalVariables.c = 2;
     }
 
     // Update is called once per frame
