@@ -18,7 +18,8 @@ public class GiveData : MonoBehaviour
     }
 
     void OnMouseDown(){
-        //go.transform.position = new Vector3(GlobalVariables.c, GlobalVariables.b, -37);
+        float b = (float)MathScript.arr[GlobalVariables.c, GlobalVariables.b];
+        go.transform.localScale = new Vector3(1.0051f, b, -0.032032f);
         Debug.Log(MathScript.arr[GlobalVariables.c, GlobalVariables.b]);
     }
 }
