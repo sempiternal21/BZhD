@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class GiveData : MonoBehaviour
 {
+    GameObject go;
     // Start is called before the first frame update
     void Start()
     {
-        
+        go = GameObject.Find("Line");
     }
 
     // Update is called once per frame
@@ -17,6 +18,7 @@ public class GiveData : MonoBehaviour
     }
 
     void OnMouseDown(){
+        //go.transform.position = new Vector3(GlobalVariables.c, GlobalVariables.b, -37);
         Debug.Log(MathScript.arr[GlobalVariables.c, GlobalVariables.b]);
     }
 }
