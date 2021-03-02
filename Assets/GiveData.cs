@@ -5,7 +5,7 @@ using UnityEngine;
 public class GiveData : MonoBehaviour
 {
     GameObject go;
-    // Start is called before the first frame update
+    // Start is called before the first frame update.
     void Start()
     {
         go = GameObject.Find("Line");
