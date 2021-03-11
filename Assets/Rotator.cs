@@ -5,6 +5,8 @@ using UnityEngine;
 public class Rotator : MonoBehaviour
 {
     public static int pos = 1;
+    float x = 0;
+    float y = 0;
     // Start is called before the first frame update
     void Start()
     {
