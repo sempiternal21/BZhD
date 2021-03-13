@@ -3025,6 +3025,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d13e0197d922b3a4b8ada87f6276046b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mouseSensitivity: 3
+  minimumX: -360
+  maximumX: 360
+  minimumY: -60
+  maximumY: 60
+  speed: 5
+  speedRotateX: 2
+  speedRotateY: 2
+  Target: {fileID: 1478880125}
 --- !u!136 &1478880122
 CapsuleCollider:
   m_ObjectHideFlags: 0
