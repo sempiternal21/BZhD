@@ -81,6 +81,7 @@ public Vector3 target;
         }else{
             go.transform.localScale = new Vector3(1.0051f, 4.17f, -0.032032f);
         }
+        Debug.Log(b);
         
         myText.text = "Напряжение миллиВольт: " + GlobalVariables.volt.ToString();
         if(pos == 11){
@@ -88,7 +89,7 @@ public Vector3 target;
             
             transform.Rotate(0.0f, 60.0f, 0.0f);
         }
-        Debug.Log(GlobalVariables.volt);
+        //Debug.Log(GlobalVariables.volt);
         GlobalVariables.a = pos;
     }
 }
