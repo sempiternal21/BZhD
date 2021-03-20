@@ -20,7 +20,8 @@ public class PolzunokClick : MonoBehaviour
         //go.transform.Translate(0, 0, transform.position.z);
         //go.transform.position = new Vector3(go.transform.position.x, go.transform.position.y, transform.position.z);
         GlobalVariables.b = index;
+        //Debug.Log(index);
 
-        ((Polzunok)go.GetComponent<Polzunok>()).MoveTo(transform.position.z);
+        //((Polzunok)go.GetComponent<Polzunok>()).MoveTo(transform.position.z);
     }
 }

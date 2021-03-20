@@ -12,7 +12,7 @@ public class ClickButtonSpring4 : MonoBehaviour
 
     GameObject Button0;
     GameObject Button1;
-    GameObject Button2;
+    GameObject Button2;GameObject go;
     GameObject Button3;
     GameObject Button4;
     // Start is called before the first frame update
@@ -24,7 +24,7 @@ public class ClickButtonSpring4 : MonoBehaviour
         Spring4 = GameObject.Find("default (3)");
         Engine = GameObject.Find("engine");
 
-        Button0 = GameObject.Find("ButtonSpring0");
+        Button0 = GameObject.Find("ButtonSpring0");go = GameObject.Find("Line");
         Button1 = GameObject.Find("ButtonSpring1");
         Button2 = GameObject.Find("ButtonSpring2");
         Button3 = GameObject.Find("ButtonSpring3");
@@ -33,7 +33,6 @@ public class ClickButtonSpring4 : MonoBehaviour
 
     void OnMouseDown()
     {
-        Debug.Log("Clicked button4");
 
         Button0.transform.position = new Vector3(5.6f, 6f, 21f);
         Button1.transform.position = new Vector3(5.6f, 5f, 21f);
@@ -47,7 +46,11 @@ public class ClickButtonSpring4 : MonoBehaviour
         Spring2.transform.localScale = new Vector3(a, a, a);
         Spring3.transform.localScale = new Vector3(a, a, a);
         Spring4.transform.localScale = new Vector3(a, a, a);
-        Engine.transform.position = new Vector3(-14.5f, 6.56f + 0.8f, 15.4f);
+        Engine.transform.position = new Vector3(-14.5f, 6.56f + 0.8f, 15.4f);float b = (float)MathScript.arr[GlobalVariables.c, GlobalVariables.b];
+        if(b / GlobalVariables.volt <= 4.17f){
+            go.transform.localScale = new Vector3(1.0051f, b / GlobalVariables.volt + 0.1f, -0.032032f);
+        }else{
+            go.transform.localScale = new Vector3(1.0051f, 4.17f, -0.032032f);}Debug.Log(b);
     }
 
     // Update is called once per frame

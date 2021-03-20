@@ -16,6 +16,8 @@ public class ClickButtonSpring0 : MonoBehaviour
     GameObject Button3;
     GameObject Button4;
 
+    GameObject go;
+
     void Start()
     {
         Spring1 = GameObject.Find("default");
@@ -29,11 +31,13 @@ public class ClickButtonSpring0 : MonoBehaviour
         Button2 = GameObject.Find("ButtonSpring2");
         Button3 = GameObject.Find("ButtonSpring3");
         Button4 = GameObject.Find("Cube (81)");
+
+        go = GameObject.Find("Line");
     }
     // Start is called before the first frame update
     void OnMouseDown()
     {
-        Debug.Log("Clicked button0");
+        
 
         Button0.transform.position = new Vector3(5.45f, 6f, 21f);
         Button1.transform.position = new Vector3(5.6f, 5f, 21f);
@@ -48,6 +52,14 @@ public class ClickButtonSpring0 : MonoBehaviour
         Spring3.transform.localScale = new Vector3(a, a, a);
         Spring4.transform.localScale = new Vector3(a, a, a);
         Engine.transform.position = new Vector3(-14.5f, 6.56f, 15.4f);
+
+        float b = (float)MathScript.arr[GlobalVariables.c, GlobalVariables.b];
+        if(b / GlobalVariables.volt <= 4.17f){
+            go.transform.localScale = new Vector3(1.0051f, b / GlobalVariables.volt + 0.1f, -0.032032f);
+        }else{
+            go.transform.localScale = new Vector3(1.0051f, 4.17f, -0.032032f);
+        }
+        Debug.Log(b);
     }
     void Update()
     {

@@ -75,14 +75,15 @@ public Vector3 target;
             case 10: GlobalVariables.volt = 5f; break;
             default: GlobalVariables.volt = 5000f; break;
         }
+        //float aa = UnityEngine.Random.Range(0f, 1f);
         float b = (float)MathScript.arr[GlobalVariables.c, GlobalVariables.b];
         if(b / GlobalVariables.volt <= 4.17f){
             go.transform.localScale = new Vector3(1.0051f, b / GlobalVariables.volt + 0.1f, -0.032032f);
         }else{
             go.transform.localScale = new Vector3(1.0051f, 4.17f, -0.032032f);
         }
-        Debug.Log(b);
         
+        Debug.Log(b);
         myText.text = "Напряжение миллиВольт: " + GlobalVariables.volt.ToString();
         if(pos == 11){
             pos = 1;
