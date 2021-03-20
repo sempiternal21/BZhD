@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Polzunok : MonoBehaviour
 {
-
     public Vector3 target;
     public float smoothTime = 0.7F;
     private Vector3 velocity = Vector3.zero;

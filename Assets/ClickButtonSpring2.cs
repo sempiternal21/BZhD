@@ -48,7 +48,7 @@ public class ClickButtonSpring2 : MonoBehaviour
         Spring2.transform.localScale = new Vector3(a, a, a);
         Spring3.transform.localScale = new Vector3(a, a, a);
         Spring4.transform.localScale = new Vector3(a, a, a);
-        Engine.transform.position = new Vector3(-14.5f, 0.5f + 0.6f, 15.4f);
+        Engine.transform.position = new Vector3(-14.5f, 6.56f + 0.6f, 15.4f);
     }
 
     // Update is called once per frame
