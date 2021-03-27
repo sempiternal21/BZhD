@@ -48,8 +48,8 @@ go = GameObject.Find("Line");
         Spring3.transform.localScale = new Vector3(a, a, a);
         Spring4.transform.localScale = new Vector3(a, a, a);
         Engine.transform.position = new Vector3(-14.5f, 6.56f + 0.7f, 15.4f);float b = (float)MathScript.arr[GlobalVariables.c, GlobalVariables.b];
-        if(b / GlobalVariables.volt <= 4.17f){
-            go.transform.localScale = new Vector3(1.0051f, b / GlobalVariables.volt + 0.1f, -0.032032f);
+        if(b / GlobalVariables.volt/2 <= 4.17f){
+            go.transform.localScale = new Vector3(1.0051f, (b / GlobalVariables.volt + 0.1f)/2, -0.032032f);
         }else{
             go.transform.localScale = new Vector3(1.0051f, 4.17f, -0.032032f);}Debug.Log(b);
     }

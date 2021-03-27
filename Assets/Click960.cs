@@ -19,8 +19,8 @@ public class Click960 : MonoBehaviour
     go1 = GameObject.Find("Cube (1)");
         go1.transform.position = new Vector3(3.384582f, 8.482458f, 16.19452f);
         float b = (float)MathScript.arr[GlobalVariables.c, GlobalVariables.b];
-        if(b / GlobalVariables.volt <= 4.17f){
-            go.transform.localScale = new Vector3(1.0051f, b / GlobalVariables.volt + 0.1f, -0.032032f);
+        if(b / GlobalVariables.volt/2 <= 4.17f){
+            go.transform.localScale = new Vector3(1.0051f, (b / GlobalVariables.volt + 0.1f)/2, -0.032032f);
         }else{
             go.transform.localScale = new Vector3(1.0051f, 4.17f, -0.032032f);
         }

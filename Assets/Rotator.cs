@@ -83,8 +83,8 @@ public Vector3 target;
         }
         //float aa = UnityEngine.Random.Range(0f, 1f);
         float b = (float)MathScript.arr[GlobalVariables.c, GlobalVariables.b];
-        if(b / GlobalVariables.volt <= 4.17f){
-            go.transform.localScale = new Vector3(1.0051f, b / GlobalVariables.volt + 0.1f, -0.032032f);
+        if(b / GlobalVariables.volt / 2 <= 4.17f){
+            go.transform.localScale = new Vector3(1.0051f, (b / GlobalVariables.volt + 0.1f)/2, -0.032032f);
         }else{
             go.transform.localScale = new Vector3(1.0051f, 4.17f, -0.032032f);
         }
